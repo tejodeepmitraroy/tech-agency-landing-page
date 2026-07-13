@@ -4,12 +4,12 @@ import { Mail01Icon, TwitterIcon, Linkedin01Icon, Facebook01Icon, ArrowUpRight01
 const FooterSection = () => {
     return (
         <footer className="w-full bg-black text-white">
-            <div className="max-w-7xl mx-auto px-6 py-16">
-                <section className="w-full flex  gap-3  pb-16">
+            <div className="max-w-7xl mx-auto px-6 py-12 md:py-16">
+                <section className="w-full flex flex-col lg:flex-row gap-12 lg:gap-3 pb-12 md:pb-16">
 
                     {/* Newsletter Section */}
-                    <section className="mb-16 flex flex-col gap-7">
-                        <h3 className="text-4xl font-semibold mb-4">Stay updated with Flexer Labs news</h3>
+                    <section className="mb-4 lg:mb-16 flex flex-col gap-6 lg:gap-7 w-full lg:w-1/3">
+                        <h3 className="text-3xl md:text-4xl font-semibold mb-2 md:mb-4">Stay updated with Flexer Labs news</h3>
                         <div className="flex rounded-4xl border border-white w-full gap-4 max-w-md">
                             <input
                                 type="email"
@@ -29,7 +29,7 @@ const FooterSection = () => {
                     </section>
 
                     {/* Navigation Links */}
-                    <section className="grid grid-cols-1 text-xl md:grid-cols-3 gap-12 mb-16">
+                    <section className="grid grid-cols-1 sm:grid-cols-2 text-lg md:text-xl md:grid-cols-3 gap-8 md:gap-12 mb-4 lg:mb-16 w-full lg:w-2/3">
                         {/* Column 1 */}
                         <ul className="flex h-fit flex-col gap-2 border-l-2 border-white/20 px-6">
                             <li><Link href="/" className="text-white transition-colors">Home</Link></li>
@@ -58,7 +58,7 @@ const FooterSection = () => {
                 </section>
                 {/* Bottom Section */}
                 <section className="border-t border-white/20 pt-8">
-                    <h2 className="text-9xl font-bold mb-6 tracking-tight">FLEXER LABS TECH</h2>
+                    <h2 className="text-[12vw] md:text-9xl font-bold mb-6 tracking-tighter leading-none whitespace-normal break-words">FLEXER LABS TECH</h2>
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                         <p className="text-white/60 text-sm">Copyright © 2025 Flexer Labs | Designed By Flexer Labs</p>
                         <div className="flex gap-6 text-sm">
